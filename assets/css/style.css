@@ -1,0 +1,81 @@
+/* Universal Settings */
+
+body {
+    font-color: #777777;
+    margin: 0;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    /* background-color: green; */
+    height: 6em;
+    max-width: 960px;
+}
+
+.header .nameBox {
+    /* background-color: orange; */
+    width: 30%;
+    color: #ffffff;
+    background-color: #4aaaa5;
+}
+
+.header .nameBox .wrapper {
+    position: relative;
+    display: inline-block;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+
+.header .linkBox {
+    /* background-color: yellow; */
+    width: 50%;
+    position: relative;
+}
+
+#left {
+    margin: 0 1.5em 0 0;
+}
+
+#middle {
+    margin: 0 1.5em;
+}
+
+#right {
+    margin: 0 0 0 1.5em;
+}
+
+.header .linkBox .wrapper {
+    display: inline-block;
+    top: 50%;
+    float: right;
+    position: relative;
+}
+
+.header a {
+    text-decoration: none;
+    margin: 20px;
+    color: #939799;
+    font-size: 1.2em;
+}
+
+body hr {
+    margin: 0;
+
+}
+
+.footer {
+    height: 3.5em;
+    background-color: gray;
+    color: white;
+    text-align: center;
+    margin: 0;
+    border-top: 6px solid #4aaaa5;
+}
+
+.footer p {
+    position: relative;
+    top: 35%;
+}
