@@ -32,7 +32,7 @@ body {
     position: relative;
     display: inline-block;
     top: 50%;
-    left:50%;
+    left: 50%;
     transform: translate(-50%, -50%);
 }
 
@@ -56,7 +56,7 @@ body {
 
 .header .linkBox .wrapper {
     display: inline-block;
-    top: 50%;
+    top: 40%;
     float: right;
     position: relative;
 }
@@ -78,7 +78,7 @@ body hr {
 
 .container {
     max-width: 960px;
-    margin: 50px auto;
+    margin: 50px auto 100px auto;
     background-color: white;
     border: 1px solid #dddddd;
 }
@@ -108,9 +108,36 @@ body hr {
     margin-bottom: 25px;
 }
 
-#gallery img {
+#gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#gallery .img-wrapper {
     width: 300px;
-    margin: 25px 20px 25px 0;
+    height: 225px;
+    margin: 25px 40px 25px 0;
+    background-image: url("/assets/images/deer.jpg");
+    background-size: cover;
+    position: relative;
+}
+
+.img-wrapper .banner {
+    height: 60px;
+    width: 100%;
+    background-color: #4aaaa5;
+    position: absolute;
+    bottom: 10px;
+}
+
+.banner h3 {
+    color: #ffffff;
+    text-align: center;
+    position: relative;
+}
+
+#gallery .banner img {
+
 }
 
 /* end general syles */
@@ -138,8 +165,9 @@ form button {
     background-color: #4aaaa5;
     border: none;
     color: #ffffff;
-    height: 25px;
-    width: 75px;
+    height: 30px;
+    width: 90px;
+    margin-bottom: 15px;
 }
 
 /* end contact styles */
@@ -152,7 +180,7 @@ form button {
     color: white;
     text-align: center;
     margin: 0;
-    border-top: 6px solid #4aaaa5;
+    border-top: 8px solid #4aaaa5;
 }
 
 .footer p {
